@@ -66,11 +66,11 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Phone size={18} className="mt-0.5 flex-shrink-0 text-[var(--gold-400)]" />
-                <a href="tel:+27214000000" className="hover:text-white transition-colors">021 400 0000</a>
+                <a href="tel:+27 70 754 5786" className="hover:text-white transition-colors">+27 70 754 5786</a>
               </li>
               <li className="flex items-start gap-3">
                 <Mail size={18} className="mt-0.5 flex-shrink-0 text-[var(--gold-400)]" />
-                <a href="mailto:info@jamiasufiya.co.za" className="hover:text-white transition-colors">info@jamiasufiya.co.za</a>
+                <a href="jamiasufiyacapetown@gmail.com" className="hover:text-white transition-colors">jamiasufiyacapetown@gmail.com</a>
               </li>
               <li className="flex items-start gap-3">
                 <Clock size={18} className="mt-0.5 flex-shrink-0 text-[var(--gold-400)]" />
