@@ -49,14 +49,19 @@ function MissionPage() {
               Our Mission
             </h2>
             <p className="mt-4 leading-relaxed text-[var(--navy-900)]/70">
-              To guide every talib entrusted to us through a complete,
-              accurate, and lasting memorisation of the Qur&rsquo;an, taught
-              with correct tajweed and rooted in sound Islamic character.
-              We aim to make hifth accessible to the families of Plumstead
-              and greater Cape Town through structured daily teaching,
-              individual attention, and an environment where the
-              Qur&rsquo;an is loved, not merely learned.
+              Jamia Sufiya exists to revive and spread the authentic teachings of
+              Tasawwuf (Islamic spirituality) in a structured, accessible, and
+              contemporary manner.
             </p>
+            <p className="mt-4 leading-relaxed text-[var(--navy-900)]/70">
+              We strive to:
+            </p>
+            <ul className="mt-3 list-disc space-y-2 pl-6 leading-relaxed text-[var(--navy-900)]/70 marker:text-[var(--gold-500)]">
+              <li>Preserve traditional Islamic scholarship</li>
+              <li>Cultivate sincerity, humility, and moral excellence</li>
+              <li>Provide reliable religious education for modern life</li>
+              <li>Connect students with authentic chains of knowledge and spirituality</li>
+            </ul>
           </div>
 
           <div className="rounded-[2rem] border border-[var(--navy-900)]/10 bg-white p-10">
@@ -67,11 +72,10 @@ function MissionPage() {
               Our Vision
             </h2>
             <p className="mt-4 leading-relaxed text-[var(--navy-900)]/70">
-              To grow into a trusted centre of Islamic learning in Cape
-              Town &mdash; one that produces huffadh who carry the
-              Qur&rsquo;an with confidence into their families and
-              communities, and one that, in time, expands beyond hifth into
-              a fuller programme of Islamic sciences.
+              Our vision is to revive the true spirit of Islamic spirituality by
+              combining sacred knowledge with inner purification, character
+              development, and devotion to Allah ﷻ. Jamia Sufiya aims to make
+              traditional Islamic learning accessible to students across Cape Town.
             </p>
           </div>
         </div>
