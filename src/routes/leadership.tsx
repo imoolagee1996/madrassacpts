@@ -10,26 +10,31 @@ const TEAM = [
     name: 'His Emmenance Syed Muhammad Jilani Ashrafi',
     role: 'Founder of Spiritual Foundation and Jamia Sufia World Wide',
     bio: 'Placeholder xxxx',
+    image: 'public/images/His Emmenance Syed Muhammad Jilani Ashrafi.png',
   },
   {
     name: 'His Emmenance Syed Hussayni Mia Ashrafi',
     role: 'Son of Syed Muhammad Jilani - Founder Jamia Sufiya Cape Town',
     bio: 'Placeholder xxxx',
+    image: 'public/images/His Emmenance Syen Hussayni Ashrafi.png',
   },
   {
     name: 'Shiekh Moegamat Zaheer Adams',
     role: 'HOD - Jamia Sufia Cape Town',
     bio: 'Placeholder xxxxx',
+    image: 'public/images/Moulana Zaheer.png',
   },
   {
     name: 'Haafith Mohammad Ameen Abdooroft',
     role: 'Hifth Teacher',
     bio: 'Placeholder xxxxx',
+    image: 'public/images/Haafith Mohammad Ameen Abdooroft.png',
   },
   {
     name: 'Haafith Sulaiman Jansen',
     role: 'Hifth Teacher',
     bio: 'Placeholder xxxxx',
+    image: 'public/images/Haafith Sulaiman Jansen.png',
   },
 ]
 
@@ -52,24 +57,27 @@ function LeadershipPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
-        <div className="grid gap-6 sm:grid-cols-2">
-          {TEAM.map((member, i) => (
+      <section className="mx-auto max-w-4xl px-5 py-20 md:px-8">
+        {/* Single column: one member per row */}
+        <div className="flex flex-col gap-6">
+          {TEAM.map((member) => (
             <div
               key={member.name}
-              className={`group relative overflow-hidden rounded-[2rem] border border-[var(--navy-900)]/10 bg-white p-8 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-[var(--navy-900)]/5 ${
-                i % 2 === 1 ? 'sm:mt-8' : ''
-              }`}
+              className="group relative overflow-hidden rounded-[2rem] border border-[var(--navy-900)]/10 bg-white p-8 transition-all hover:-translate-y-1 hover:shadow-xl hover:shadow-[var(--navy-900)]/5"
             >
-              <div className="flex items-center gap-4">
-                <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl bg-[var(--navy-900)]">
-                  <GraduationCap size={26} className="text-[var(--gold-400)]" strokeWidth={2} />
-                </div>
+              <div className="flex items-center gap-5">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  className="h-20 w-20 flex-shrink-0 rounded-2xl object-cover md:h-24 md:w-24"
+                />
                 <div>
                   <h2 className="font-display text-xl font-semibold text-[var(--navy-900)]">
                     {member.name}
                   </h2>
-                  <p className="text-sm font-semibold text-[var(--gold-600)]">{member.role}</p>
+                  <p className="text-sm font-semibold text-[var(--gold-600)]">
+                    {member.role}
+                  </p>
                 </div>
               </div>
               <p className="mt-5 text-sm leading-relaxed text-[var(--navy-900)]/65">
