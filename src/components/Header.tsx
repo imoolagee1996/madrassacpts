@@ -84,13 +84,6 @@ export function Header() {
               </div>
             )}
           </div>
-
-          <a
-            href="#donate"
-            className="ml-3 rounded-full bg-[var(--navy-900)] px-5 py-2.5 text-sm font-semibold text-[var(--cream-50)] transition-colors hover:bg-[var(--navy-800)]"
-          >
-            Support the Madrassa
-          </a>
         </nav>
 
         {/* Mobile toggle */}
@@ -122,13 +115,6 @@ export function Header() {
               </li>
             ))}
           </ul>
-          <a
-            href="#donate"
-            onClick={() => setMobileOpen(false)}
-            className="mt-3 block rounded-xl bg-[var(--navy-900)] px-4 py-3 text-center text-sm font-semibold text-[var(--cream-50)]"
-          >
-            Support the Madrassa
-          </a>
         </div>
       )}
     </header>
