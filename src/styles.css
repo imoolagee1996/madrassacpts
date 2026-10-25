@@ -1,0 +1,88 @@
+@import "tailwindcss" source("../");
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --navy-950: #0b1230;
+  --navy-900: #101a44;
+  --navy-800: #16215a;
+  --navy-700: #1d2b73;
+  --navy-600: #263a94;
+  --gold-600: #c9932e;
+  --gold-500: #e0a83a;
+  --gold-400: #f0bf4c;
+  --gold-300: #f7d477;
+  --cream-50: #fbf8f1;
+  --cream-100: #f5efe0;
+}
+
+* {
+  border-color: var(--navy-900);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--cream-50);
+  color: var(--navy-950);
+}
+
+.font-display {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+code {
+  font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Decorative repeating lattice pattern derived from the crest's globe motif */
+.pattern-lattice {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(224, 168, 58, 0.35) 1px, transparent 1.6px);
+  background-size: 26px 26px;
+}
+
+.pattern-arch-repeat {
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(224, 168, 58, 0.08) 0px,
+    rgba(224, 168, 58, 0.08) 2px,
+    transparent 2px,
+    transparent 22px
+  );
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.delay-1 { animation-delay: 0.08s; }
+.delay-2 { animation-delay: 0.16s; }
+.delay-3 { animation-delay: 0.24s; }
+.delay-4 { animation-delay: 0.32s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up {
+    animation: none;
+  }
+}
