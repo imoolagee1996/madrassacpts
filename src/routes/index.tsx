@@ -10,17 +10,17 @@ const PILLARS = [
   {
     icon: HeartHandshake,
     title: 'Love',
-    body: 'Every talib is nurtured with warmth, patience, and individual attention as they grow in their relationship with the Qur’an.',
+    body: 'Every student is nurtured with warmth, patience, and individual attention as they grow in their love for Allah, His Messenger ﷺ, and the Qur’an.',
   },
   {
     icon: Sparkles,
     title: 'Struggle',
-    body: 'Hifth is a discipline of daily effort. We walk alongside each student through the repetition, revision, and resolve it demands.',
+    body: 'Learning the deen takes steady, daily effort. We walk alongside each student through the practice, revision, and perseverance it demands.',
   },
   {
     icon: BookOpen,
     title: 'Faith',
-    body: 'The Qur’an is memorised not as a task to finish, but as a lifelong companion that shapes character and conviction.',
+    body: 'Islamic knowledge is not just something to learn but something to live. It shapes character, conviction, and the way our students move through the world.',
   },
 ]
 
@@ -39,12 +39,13 @@ function HomePage() {
               Plumstead &middot; Cape Town
             </p>
             <h1 className="font-display animate-fade-up delay-1 mt-5 text-4xl font-semibold leading-[1.08] text-white text-balance md:text-6xl">
-              Raising huffadh of the Qur&rsquo;an, one verse at a time.
+              Nurturing hearts and minds with the light of Islam.
             </h1>
             <p className="animate-fade-up delay-2 mt-6 max-w-lg text-base leading-relaxed text-[var(--cream-100)]/75 md:text-lg">
-              Jamia Sufiya Cape Town is a new hifth madrassa dedicated to
-              helping students memorise, preserve, and embody the Qur&rsquo;an,
-              guided by love, struggle, and faith.
+              Jamia Sufiya Cape Town is a madrassa in Plumstead dedicated to
+              teaching our children the Qur&rsquo;an, the deen, and the
+              character of the Prophet &#65018;, guided by love, struggle, and
+              faith.
             </p>
             <div className="animate-fade-up delay-3 mt-9 flex flex-wrap gap-4">
               <Link
@@ -84,7 +85,7 @@ function HomePage() {
           </h2>
           <p className="mt-4 text-[var(--navy-900)]/65 leading-relaxed">
             Our motto is not decoration &mdash; it is the framework for how we
-            teach, and the standard by which every talib is supported.
+            teach, and the standard by which every student is supported.
           </p>
         </div>
 
@@ -118,28 +119,26 @@ function HomePage() {
               Our Focus
             </p>
             <h2 className="font-display mt-4 text-3xl font-semibold text-[var(--navy-900)] md:text-4xl">
-              A dedicated hifth programme, taught with care.
+              A madrassa education, taught with care.
             </h2>
             <p className="mt-5 leading-relaxed text-[var(--navy-900)]/70">
-              At this stage, Jamia Sufiya Cape Town concentrates entirely on
-              hifth &mdash; the memorisation and preservation of the
-              Qur&rsquo;an. Small class sizes, structured daily revision
-              (dhor), and consistent one-on-one correction give every talib
-              the foundation to complete their memorisation with confidence
-              and tajweed accuracy.
+              At Jamia Sufiya Cape Town, students receive a well-rounded
+              Islamic education built on the Qur&rsquo;an and the fundamentals
+              of the deen. Small classes and personal attention help every
+              student learn with confidence, understanding, and adab.
             </p>
             <ul className="mt-7 space-y-4 text-sm text-[var(--navy-900)]/75">
               <li className="flex gap-3">
                 <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--gold-500)]" />
-                Daily new memorisation, revision, and dhor sessions
+                Qur&rsquo;an reading with Tajweed correction in every lesson
               </li>
               <li className="flex gap-3">
                 <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--gold-500)]" />
-                Individual pacing suited to each talib&rsquo;s ability
+                Essential Islamic knowledge, Fiqh and Aqeedah
               </li>
               <li className="flex gap-3">
                 <span className="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[var(--gold-500)]" />
-                Tajweed correction woven into every lesson
+                Learning at a pace suited to each student&rsquo;s age and ability
               </li>
             </ul>
           </div>
@@ -172,8 +171,8 @@ function HomePage() {
             </h2>
             <p className="mt-5 leading-relaxed text-[var(--navy-900)]/70">
               5 Palatine Rd, Plumstead, Cape Town, 7801. Come visit, ask
-              questions, and see the classrooms where our huffadh-in-training
-              spend their days.
+              questions, and see the classrooms where our students learn and
+              grow.
             </p>
             <Link
               to="/contact"
