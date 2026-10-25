@@ -72,12 +72,13 @@ export function Footer() {
                 <Mail size={18} className="mt-0.5 flex-shrink-0 text-[var(--gold-400)]" />
                 <a href="jamiasufiyacapetown@gmail.com" className="hover:text-white transition-colors">jamiasufiyacapetown@gmail.com</a>
               </li>
-              <li className="flex items-start gap-3">
-                <Clock size={18} className="mt-0.5 flex-shrink-0 text-[var(--gold-400)]" />
-                <span>Monday &ndash; Thursday, 7:30am &ndash; Asr</span>
-              </br>
-                <span>Friday &ndash; Jumuah</span>
-              </li>
+            <li className="flex items-start gap-3">
+              <Clock size={18} className="mt-0.5 flex-shrink-0 text-[var(--gold-400)]" />
+              <div>
+                <p>Monday &ndash; Thursday, 7:30am &ndash; Asr</p>
+                <p>Friday &ndash; Jumuah</p>
+              </div>
+            </li>
             </ul>
           </div>
         </div>
