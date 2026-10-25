@@ -101,9 +101,9 @@ function ContactPage() {
                 <div>
                   <h3 className="font-display font-semibold text-[var(--navy-900)]">Hours</h3>
                   <p className="mt-1 text-sm text-[var(--navy-900)]/70">
-                    Saturday &ndash; Thursday, 6:30am &ndash; 5:00pm
+                    Monday &ndash; Thursday, 7:30am &ndash; Asr
                     <br />
-                    Closed Fridays
+                    Friday's &ndash; Jumuah
                   </p>
                 </div>
               </div>
