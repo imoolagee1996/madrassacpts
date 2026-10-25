@@ -7,24 +7,29 @@ export const Route = createFileRoute('/leadership')({
 
 const TEAM = [
   {
-    name: 'Moulana Yusuf Qasmi',
-    role: 'Founder & Head Ustadh',
-    bio: 'Oversees the hifth curriculum and leads daily dhor sessions, drawing on over a decade of teaching experience at madaris in Cape Town and Karachi.',
+    name: 'His Emmenance Syed Muhammad Jilani Ashrafi',
+    role: 'Founder of Spiritual Foundation and Jamia Sufia World Wide',
+    bio: 'Placeholder xxxx',
   },
   {
-    name: 'Ustadh Ridwaan Adams',
-    role: 'Hifth Instructor',
-    bio: 'Guides new memorisation and tajweed correction for junior huffadh, with a focus on building strong foundations in the early stages.',
+    name: 'His Emmenance Syed Hussayni Mia Ashrafi',
+    role: 'Son of Syed Muhammad Jilani - Founder Jamia Sufiya Cape Town',
+    bio: 'Placeholder xxxx',
   },
   {
-    name: 'Ustadha Fatima Bawa',
-    role: 'Girls’ Programme Coordinator',
-    bio: 'Coordinates the girls’ hifth classes and liaises with parents on progress, attendance, and revision at home.',
+    name: 'Shiekh Moegamat Zaheer Adams',
+    role: 'HOD - Jamia Sufia Cape Town',
+    bio: 'Placeholder xxxxx',
   },
   {
-    name: 'Br. Ismail Petersen',
-    role: 'Operations & Admissions',
-    bio: 'Manages enrolment, day-to-day administration, and is usually the first point of contact for prospective families.',
+    name: 'Haafith Mohammad Ameen Abdooroft',
+    role: 'Hifth Teacher',
+    bio: 'Placeholder xxxxx',
+  },
+  {
+    name: 'Haafith Sulaiman Jansen',
+    role: 'Hifth Teacher',
+    bio: 'Placeholder xxxxx',
   },
 ]
 
