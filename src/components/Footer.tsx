@@ -74,7 +74,9 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Clock size={18} className="mt-0.5 flex-shrink-0 text-[var(--gold-400)]" />
-                <span>Saturday &ndash; Thursday, 6:30am &ndash; 5:00pm</span>
+                <span>Monday &ndash; Thursday, 7:30am &ndash; Asr</span>
+              </br>
+                <span>Friday &ndash; Jumuah</span>
               </li>
             </ul>
           </div>
