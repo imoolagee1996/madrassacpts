@@ -74,7 +74,7 @@ function ContactPage() {
                     href="tel:+27214000000"
                     className="mt-1 block text-sm text-[var(--navy-900)]/70 hover:text-[var(--gold-600)] transition-colors"
                   >
-                    021 400 0000
+                    +27 70 754 5786
                   </a>
                 </div>
               </div>
@@ -89,7 +89,7 @@ function ContactPage() {
                     href="mailto:info@jamiasufiya.co.za"
                     className="mt-1 block text-sm text-[var(--navy-900)]/70 hover:text-[var(--gold-600)] transition-colors"
                   >
-                    info@jamiasufiya.co.za
+                    jamiasufiyacapetown@gmail.com
                   </a>
                 </div>
               </div>
