@@ -1,5 +1,4 @@
 import { createFileRoute } from '@tanstack/react-router'
-import { GraduationCap } from 'lucide-react'
 
 export const Route = createFileRoute('/leadership')({
   component: LeadershipPage,
@@ -7,34 +6,34 @@ export const Route = createFileRoute('/leadership')({
 
 const TEAM = [
   {
-    name: 'His Emmenance Syed Muhammad Jilani Ashrafi',
+    name: 'His Eminence Syed Muhammad Jilani Ashrafi',
     role: 'Founder of Spiritual Foundation and Jamia Sufia World Wide',
     bio: 'Placeholder xxxx',
-    image: 'public/images/His Emmenance Syed Muhammad Jilani Ashrafi.png',
+    image: '/images/His Emmenance Syed Muhammad Jilani Ashrafi.png',
   },
   {
-    name: 'His Emmenance Syed Hussayni Mia Ashrafi',
+    name: 'His Eminence Syed Hussayni Mia Ashrafi',
     role: 'Son of Syed Muhammad Jilani - Founder Jamia Sufiya Cape Town',
     bio: 'Placeholder xxxx',
-    image: 'public/images/His Emmenance Syen Hussayni Ashrafi.png',
+    image: '/images/His Emmenance Syen Hussayni Ashrafi.png',
   },
   {
-    name: 'Shiekh Moegamat Zaheer Adams',
+    name: 'Sheikh Moegamat Zaheer Adams',
     role: 'HOD - Jamia Sufia Cape Town',
     bio: 'Placeholder xxxxx',
-    image: 'public/images/Moulana Zaheer.png',
+    image: '/images/Moulana Zaheer.png',
   },
   {
     name: 'Haafith Mohammad Ameen Abdooroft',
     role: 'Hifth Teacher',
     bio: 'Placeholder xxxxx',
-    image: 'public/images/Haafith Mohammad Ameen Abdooroft.png',
+    image: '/images/Haafith Mohammad Ameen Abdooroft.png',
   },
   {
     name: 'Haafith Sulaiman Jansen',
     role: 'Hifth Teacher',
     bio: 'Placeholder xxxxx',
-    image: 'public/images/Haafith Sulaiman Jansen.png',
+    image: '/images/Haafith Sulaiman Jansen.png',
   },
 ]
 
@@ -67,7 +66,7 @@ function LeadershipPage() {
             >
               <div className="flex items-center gap-5">
                 <img
-                  src={member.image}
+                  src={encodeURI(member.image)}
                   alt={member.name}
                   className="h-20 w-20 flex-shrink-0 rounded-2xl object-cover md:h-24 md:w-24"
                 />
