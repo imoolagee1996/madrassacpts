@@ -1,7 +1,7 @@
 import { Link } from '@tanstack/react-router'
 import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 
-const ADDRESS = '5 Palatine Rd, Plumstead, Cape Town, 7801'
+const ADDRESS = '7 Delaney Road, Plumstead, Cape Town, 7801'
 const MAPS_EMBED_SRC = `https://www.google.com/maps?q=${encodeURIComponent(ADDRESS)}&output=embed`
 const MAPS_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDRESS)}`
 
