@@ -38,10 +38,10 @@ export function Header() {
               key={page.to}
               to={page.to}
               activeOptions={{ exact: true }}
-              className="border-b-2 border-transparent py-1 text-sm font-semibold text-[var(--navy-900)] transition-colors hover:text-[var(--gold-600)]"
+              className="py-1 text-sm font-semibold text-[var(--navy-900)] transition-colors hover:text-[var(--gold-600)]"
               activeProps={{
                 className:
-                  'border-b-2 border-[var(--gold-500)] py-1 text-sm font-semibold text-[var(--gold-600)]',
+                  'py-1 text-sm font-semibold text-[var(--gold-600)]',
               }}
             >
               {page.label}
