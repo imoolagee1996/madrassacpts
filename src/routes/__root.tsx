@@ -15,12 +15,12 @@ export const Route = createRootRoute({
         content: 'width=device-width, initial-scale=1',
       },
       {
-        title: 'Jamia Sufiya Cape Town | Hifth Madrassa in Plumstead',
+        title: 'Jamia Sufiya Cape Town | Madrassa in Plumstead',
       },
       {
         name: 'description',
         content:
-          'Jamia Sufiya Cape Town is a hifth-focused madrassa in Plumstead, Cape Town, guided by love, struggle, and faith.',
+          'Jamia Sufiya Cape Town is a madrassa in Plumstead, Cape Town, guided by love, struggle, and faith.',
       },
     ],
     links: [{ rel: 'icon', href: '/favicon.png', type: 'image/png' }],
