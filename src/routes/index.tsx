@@ -170,7 +170,7 @@ function HomePage() {
               Based in the heart of Plumstead.
             </h2>
             <p className="mt-5 leading-relaxed text-[var(--navy-900)]/70">
-              5 Palatine Rd, Plumstead, Cape Town, 7801. Come visit, ask
+              7 Delaney Rd, Plumstead, Cape Town, 7801. Come visit, ask
               questions, and see the classrooms where our students learn and
               grow.
             </p>
