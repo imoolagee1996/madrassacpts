@@ -7,7 +7,7 @@ export const Route = createFileRoute('/contact')({
   component: ContactPage,
 })
 
-const ADDRESS = '5 Palatine Rd, Plumstead, Cape Town, 7801'
+const ADDRESS = '7 Delaney Rd, Plumstead, Cape Town, 7801'
 const MAPS_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDRESS)}`
 
 function ContactPage() {
