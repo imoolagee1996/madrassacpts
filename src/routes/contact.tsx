@@ -57,7 +57,7 @@ function ContactPage() {
                     href={MAPS_LINK}
                     target="_blank"
                     rel="noreferrer"
-                    className="mt-1 block text-sm text-[var(--navy-900)]/70 hover:text-[var(--gold-600)] transition-colors"
+                    className="mt-1 block text-sm text-[var(--navy-900)]/70 transition-colors hover:text-[var(--gold-600)]"
                   >
                     {ADDRESS}
                   </a>
@@ -71,8 +71,8 @@ function ContactPage() {
                 <div>
                   <h3 className="font-display font-semibold text-[var(--navy-900)]">Phone</h3>
                   <a
-                    href="tel:+27214000000"
-                    className="mt-1 block text-sm text-[var(--navy-900)]/70 hover:text-[var(--gold-600)] transition-colors"
+                    href="tel:+27707545786"
+                    className="mt-1 block text-sm text-[var(--navy-900)]/70 transition-colors hover:text-[var(--gold-600)]"
                   >
                     +27 70 754 5786
                   </a>
@@ -86,8 +86,8 @@ function ContactPage() {
                 <div>
                   <h3 className="font-display font-semibold text-[var(--navy-900)]">Email</h3>
                   <a
-                    href="mailto:info@jamiasufiya.co.za"
-                    className="mt-1 block text-sm text-[var(--navy-900)]/70 hover:text-[var(--gold-600)] transition-colors"
+                    href="mailto:jamiasufiyacapetown@gmail.com"
+                    className="mt-1 block break-all text-sm text-[var(--navy-900)]/70 transition-colors hover:text-[var(--gold-600)]"
                   >
                     jamiasufiyacapetown@gmail.com
                   </a>
@@ -103,7 +103,7 @@ function ContactPage() {
                   <p className="mt-1 text-sm text-[var(--navy-900)]/70">
                     Monday &ndash; Thursday, 7:30am &ndash; Asr
                     <br />
-                    Friday's &ndash; Jumuah
+                    Friday &ndash; Jumuah
                   </p>
                 </div>
               </div>
@@ -111,18 +111,14 @@ function ContactPage() {
           </div>
 
           <div className="rounded-[2rem] border border-[var(--navy-900)]/10 bg-white p-8 md:p-10">
-            <h2 className="font-display text-2xl font-semibold text-[var(--navy-900)]">
-              Send Us a Message
-            </h2>
+            <h2 className="font-display text-2xl font-semibold text-[var(--navy-900)]">Send Us a Message</h2>
             <p className="mt-2 text-sm text-[var(--navy-900)]/60">
-              Enquiring about enrolment or just have a question? Fill in the
-              form below.
+              Enquiring about enrolment or just have a question? Fill in the form below.
             </p>
 
             {submitted ? (
               <div className="mt-8 rounded-2xl bg-[var(--gold-400)]/15 p-6 text-sm text-[var(--navy-900)]">
-                Thank you &mdash; your message has been sent. We will be in
-                touch shortly, insha&rsquo;Allah.
+                Thank you &mdash; your message has been sent. We will be in touch shortly, insha&rsquo;Allah.
               </div>
             ) : (
               <form
@@ -142,14 +138,17 @@ function ContactPage() {
 
                 {error && (
                   <div className="rounded-2xl bg-red-50 p-4 text-sm text-red-700">
-                    Something went wrong sending your message. Please try
-                    again, or reach us directly by phone or email.
+                    Something went wrong sending your message. Please try again, or reach us directly by phone or
+                    email.
                   </div>
                 )}
 
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
-                    <label htmlFor="name" className="text-xs font-semibold uppercase tracking-wide text-[var(--navy-900)]/60">
+                    <label
+                      htmlFor="name"
+                      className="text-xs font-semibold uppercase tracking-wide text-[var(--navy-900)]/60"
+                    >
                       Full Name
                     </label>
                     <input
@@ -162,7 +161,10 @@ function ContactPage() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="text-xs font-semibold uppercase tracking-wide text-[var(--navy-900)]/60">
+                    <label
+                      htmlFor="phone"
+                      className="text-xs font-semibold uppercase tracking-wide text-[var(--navy-900)]/60"
+                    >
                       Phone Number
                     </label>
                     <input
@@ -176,7 +178,10 @@ function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="text-xs font-semibold uppercase tracking-wide text-[var(--navy-900)]/60">
+                  <label
+                    htmlFor="email"
+                    className="text-xs font-semibold uppercase tracking-wide text-[var(--navy-900)]/60"
+                  >
                     Email Address
                   </label>
                   <input
@@ -190,7 +195,10 @@ function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="text-xs font-semibold uppercase tracking-wide text-[var(--navy-900)]/60">
+                  <label
+                    htmlFor="message"
+                    className="text-xs font-semibold uppercase tracking-wide text-[var(--navy-900)]/60"
+                  >
                     Message
                   </label>
                   <textarea
@@ -218,9 +226,7 @@ function ContactPage() {
 
       <section className="pb-20">
         <div className="mx-auto max-w-6xl px-5 md:px-8">
-          <h2 className="font-display text-2xl font-semibold text-[var(--navy-900)] mb-6">
-            Find Us on the Map
-          </h2>
+          <h2 className="font-display mb-6 text-2xl font-semibold text-[var(--navy-900)]">Find Us on the Map</h2>
           <MapEmbed className="h-[420px] w-full" />
         </div>
       </section>
