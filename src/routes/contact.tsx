@@ -157,7 +157,6 @@ function ContactPage() {
                       type="text"
                       required
                       className="mt-2 w-full rounded-xl border border-[var(--navy-900)]/15 bg-[var(--cream-50)] px-4 py-3 text-sm text-[var(--navy-900)] outline-none transition-colors focus:border-[var(--gold-500)]"
-                      placeholder="Zainab Abrahams"
                     />
                   </div>
                   <div>
@@ -172,7 +171,6 @@ function ContactPage() {
                       name="phone"
                       type="tel"
                       className="mt-2 w-full rounded-xl border border-[var(--navy-900)]/15 bg-[var(--cream-50)] px-4 py-3 text-sm text-[var(--navy-900)] outline-none transition-colors focus:border-[var(--gold-500)]"
-                      placeholder="083 555 0192"
                     />
                   </div>
                 </div>
@@ -190,7 +188,6 @@ function ContactPage() {
                     type="email"
                     required
                     className="mt-2 w-full rounded-xl border border-[var(--navy-900)]/15 bg-[var(--cream-50)] px-4 py-3 text-sm text-[var(--navy-900)] outline-none transition-colors focus:border-[var(--gold-500)]"
-                    placeholder="zainab@example.co.za"
                   />
                 </div>
 
@@ -207,7 +204,6 @@ function ContactPage() {
                     required
                     rows={4}
                     className="mt-2 w-full rounded-xl border border-[var(--navy-900)]/15 bg-[var(--cream-50)] px-4 py-3 text-sm text-[var(--navy-900)] outline-none transition-colors focus:border-[var(--gold-500)]"
-                    placeholder="I would like to enquire about enrolling my son for the hifth programme..."
                   />
                 </div>
 

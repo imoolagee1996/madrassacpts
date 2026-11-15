@@ -42,7 +42,7 @@ const AALIMIYA_SUBJECTS = [
 // Gold highlight used for days, times and start dates
 function Highlight({ children }: { children: ReactNode }) {
   return (
-    <span className="rounded-md bg-[var(--gold-400)] px-1.5 py-0.5 font-semibold text-[var(--navy-950)] [box-decoration-break:clone] [-webkit-box-decoration-break:clone]">
+    <span className="rounded-md bg-[var(--gold-400)] px-1.5 py-0.5 font-semibold text-[var(--navy-950)] [box-decoration-break:clone] [-webkit-box-decoration-break:clone] leading-7">
       {children}
     </span>
   )
@@ -81,7 +81,7 @@ function CoursesPage() {
 
       <section className="mx-auto max-w-6xl px-5 py-20 md:px-8">
         {/* Hifth Programme */}
-        <div className="pattern-arch-repeat relative overflow-hidden rounded-[2rem] bg-[var(--navy-900)] p-8 md:p-12">
+        <div className="pattern-arch-repeat relative overflow-hidden rounded-[2rem] bg-[var(--navy-900)] p-6 sm:p-8 md:p-12">
           <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-center">
             <div>
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--gold-400)]/15">
@@ -133,7 +133,7 @@ function CoursesPage() {
         </div>
 
         {/* Pre Al-‘Aalimiya Course */}
-        <div className="pattern-arch-repeat relative mt-8 overflow-hidden rounded-[2rem] bg-[var(--navy-900)] p-8 md:p-12">
+        <div className="pattern-arch-repeat relative mt-8 overflow-hidden rounded-[2rem] bg-[var(--navy-900)] p-6 sm:p-8 md:p-12">
           <span className="inline-flex rounded-full bg-[var(--gold-500)] px-4 py-1.5 text-xs font-bold uppercase tracking-[0.14em] text-[var(--navy-950)]">
             2027 Admissions Now Open
           </span>
@@ -156,7 +156,7 @@ function CoursesPage() {
               <p className="mt-8 text-xs font-semibold uppercase tracking-[0.22em] text-[var(--gold-400)]">
                 Subjects include
               </p>
-              <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
+              <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
                 {AALIMIYA_SUBJECTS.map((subject) => (
                   <div
                     key={subject.label}
@@ -165,7 +165,7 @@ function CoursesPage() {
                     <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-xl bg-[var(--gold-400)]/15">
                       <subject.icon size={17} className="text-[var(--gold-400)]" strokeWidth={2} />
                     </span>
-                    <span className="text-sm font-semibold leading-tight text-white">{subject.label}</span>
+                    <span className="min-w-0 text-sm font-semibold leading-tight text-white">{subject.label}</span>
                   </div>
                 ))}
               </div>
@@ -187,10 +187,6 @@ function CoursesPage() {
                 </Detail>
                 <Detail label="Duration">One year, part-time</Detail>
               </dl>
-              <p className="px-2 text-sm leading-relaxed text-[var(--cream-100)]/60">
-                Under the spiritual guidance and academic leadership of Hazrat Syed Muhammad Jilani Ashraf and Hazrat
-                Syed Muhammad Husaini Ashraf.
-              </p>
             </div>
           </div>
         </div>

@@ -116,7 +116,6 @@ function AboutPage() {
             <p className="font-display mt-2 text-xl font-semibold italic leading-snug text-white text-balance md:text-2xl">
               Sheikh-e-Tariqat Hazrat Allama Syed Muhammad Jilani Ashraf, Kichhauchhvi
             </p>
-            <p className="mt-2 text-sm italic text-[var(--gold-400)]">(Rahmatullahi Alayhi)</p>
           </div>
         </div>
       </section>
