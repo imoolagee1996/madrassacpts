@@ -9,25 +9,49 @@ export const Route = createFileRoute('/contact')({
 
 const ADDRESS = '7 Delaney Rd, Plumstead, Cape Town, 7801'
 const MAPS_LINK = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ADDRESS)}`
+const EMAIL = 'jamiasufiyacapetown@gmail.com'
+
+// Paste your Formspree form address between the quotes, e.g. 'https://formspree.io/f/abcdwxyz'.
+// While it's empty, the form opens the visitor's email app with their message filled in instead.
+const FORMSPREE_ENDPOINT = ''
 
 function ContactPage() {
   const [submitted, setSubmitted] = useState(false)
+  const [sending, setSending] = useState(false)
   const [error, setError] = useState(false)
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setError(false)
     const formData = new FormData(e.currentTarget)
+
+    // No Formspree address yet: open the visitor's email app with the message filled in
+    if (!FORMSPREE_ENDPOINT) {
+      const subject = `Website enquiry from ${formData.get('name')}`
+      const body = [
+        `Name: ${formData.get('name')}`,
+        `Phone: ${formData.get('phone') || '-'}`,
+        `Email: ${formData.get('email')}`,
+        '',
+        `${formData.get('message')}`,
+      ].join('\n')
+      window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+      return
+    }
+
+    setSending(true)
     try {
-      const response = await fetch('/__forms.html', {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
+        headers: { Accept: 'application/json' },
+        body: formData,
       })
       if (!response.ok) throw new Error('Submission failed')
       setSubmitted(true)
     } catch {
       setError(true)
+    } finally {
+      setSending(false)
     }
   }
 
@@ -121,20 +145,10 @@ function ContactPage() {
                 Thank you &mdash; your message has been sent. We will be in touch shortly, insha&rsquo;Allah.
               </div>
             ) : (
-              <form
-                name="contact"
-                method="POST"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
-                onSubmit={handleSubmit}
-                className="mt-8 space-y-5"
-              >
-                <input type="hidden" name="form-name" value="contact" />
-                <p className="hidden">
-                  <label>
-                    Don&rsquo;t fill this out: <input name="bot-field" />
-                  </label>
-                </p>
+              <form onSubmit={handleSubmit} className="mt-8 space-y-5">
+                <input type="hidden" name="_subject" value="New enquiry from the Jamia Sufiya website" />
+                {/* Spam trap: hidden from people, filled in only by bots */}
+                <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" className="hidden" />
 
                 {error && (
                   <div className="rounded-2xl bg-red-50 p-4 text-sm text-red-700">
@@ -209,9 +223,10 @@ function ContactPage() {
 
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-2 rounded-full bg-[var(--navy-900)] px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[var(--navy-800)]"
+                  disabled={sending}
+                  className="inline-flex items-center gap-2 rounded-full bg-[var(--navy-900)] px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-[var(--navy-800)] disabled:opacity-60"
                 >
-                  Send Message
+                  {sending ? 'Sending…' : 'Send Message'}
                   <Send size={16} strokeWidth={2.5} />
                 </button>
               </form>
